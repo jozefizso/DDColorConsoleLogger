@@ -3,6 +3,10 @@
 </p>
 
 # DDColorConsoleLogger
+[![Build Status](http://img.shields.io/travis/jozefizso/DDColorConsoleLogger/master.svg?style=flat)](https://travis-ci.org/jozefizso/DDColorConsoleLogger)
+[![Pod Version](http://img.shields.io/cocoapods/v/DDColorConsoleLogger.svg?style=flat)](http://cocoadocs.org/docsets/DDColorConsoleLogger/)
+[![Pod Platform](http://img.shields.io/cocoapods/p/DDColorConsoleLogger.svg?style=flat)](http://cocoadocs.org/docsets/DDColorConsoleLogger/)
+[![Pod License](http://img.shields.io/cocoapods/l/DDColorConsoleLogger.svg?style=flat)](http://choosealicense.com/licenses/mit/)
 
 **DDColorConsoleLogger** is logger with colorful output.
 
@@ -16,7 +20,27 @@
 DDColorConsoleLogger is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-    pod "DDColorConsoleLogger"
+```ruby
+pod 'DDColorConsoleLogger', '~> 1.0.0'
+```
+
+## Usage
+
+```objc
+#import <CocoaLumberjack/DDLog.h>
+#import <DDColorConsoleLogger/DDColorConsoleLogger.h>
+
+- (void)setupLogging
+{
+    [DDLog addLogger:[DDColorConsoleLogger sharedInstance]];
+    
+    DDLogError(@"Error");
+    DDLogWarn(@"Warn");
+    DDLogInfo(@"Info");
+    DDLogDebug(@"Debug");
+    DDLogVerbose(@"Verbose");
+}
+```
 
 ## Author
 

@@ -10,7 +10,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DDColorConsoleLogger"
-  s.version          = "0.1.0"
+  s.version          = "1.0.0"
   s.summary          = "A logger for CocoaLumberjack with color output in console."
   s.homepage         = "https://github.com/jozefizso/DDColorConsoleLogger"
   s.license          = 'MIT'
