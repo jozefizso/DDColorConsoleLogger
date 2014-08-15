@@ -1,0 +1,265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE5D7830199E1A5B0049146A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5D782F199E1A5B0049146A /* Foundation.framework */; };
+		FE5D7835199E1A5B0049146A /* DDColorConsoleLogger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE5D7834199E1A5B0049146A /* DDColorConsoleLogger.h */; };
+		FE5D7837199E1A5B0049146A /* DDColorConsoleLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5D7836199E1A5B0049146A /* DDColorConsoleLogger.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FE5D782A199E1A5B0049146A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				FE5D7835199E1A5B0049146A /* DDColorConsoleLogger.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FE5D782C199E1A5B0049146A /* libDDColorConsoleLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDDColorConsoleLogger.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE5D782F199E1A5B0049146A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FE5D7833199E1A5B0049146A /* DDColorConsoleLogger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDColorConsoleLogger-Prefix.pch"; sourceTree = "<group>"; };
+		FE5D7834199E1A5B0049146A /* DDColorConsoleLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDColorConsoleLogger.h; sourceTree = "<group>"; };
+		FE5D7836199E1A5B0049146A /* DDColorConsoleLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDColorConsoleLogger.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE5D7829199E1A5B0049146A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE5D7830199E1A5B0049146A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE5D7823199E1A5B0049146A = {
+			isa = PBXGroup;
+			children = (
+				FE5D7831199E1A5B0049146A /* DDColorConsoleLogger */,
+				FE5D782E199E1A5B0049146A /* Frameworks */,
+				FE5D782D199E1A5B0049146A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE5D782D199E1A5B0049146A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE5D782C199E1A5B0049146A /* libDDColorConsoleLogger.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE5D782E199E1A5B0049146A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE5D782F199E1A5B0049146A /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE5D7831199E1A5B0049146A /* DDColorConsoleLogger */ = {
+			isa = PBXGroup;
+			children = (
+				FE5D7834199E1A5B0049146A /* DDColorConsoleLogger.h */,
+				FE5D7836199E1A5B0049146A /* DDColorConsoleLogger.m */,
+				FE5D7832199E1A5B0049146A /* Supporting Files */,
+			);
+			path = DDColorConsoleLogger;
+			sourceTree = "<group>";
+		};
+		FE5D7832199E1A5B0049146A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE5D7833199E1A5B0049146A /* DDColorConsoleLogger-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE5D782B199E1A5B0049146A /* DDColorConsoleLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE5D784F199E1A5B0049146A /* Build configuration list for PBXNativeTarget "DDColorConsoleLogger" */;
+			buildPhases = (
+				FE5D7828199E1A5B0049146A /* Sources */,
+				FE5D7829199E1A5B0049146A /* Frameworks */,
+				FE5D782A199E1A5B0049146A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDColorConsoleLogger;
+			productName = DDColorConsoleLogger;
+			productReference = FE5D782C199E1A5B0049146A /* libDDColorConsoleLogger.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE5D7824199E1A5B0049146A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jozef Izso";
+			};
+			buildConfigurationList = FE5D7827199E1A5B0049146A /* Build configuration list for PBXProject "DDColorConsoleLogger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FE5D7823199E1A5B0049146A;
+			productRefGroup = FE5D782D199E1A5B0049146A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE5D782B199E1A5B0049146A /* DDColorConsoleLogger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE5D7828199E1A5B0049146A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE5D7837199E1A5B0049146A /* DDColorConsoleLogger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FE5D784D199E1A5B0049146A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FE5D784E199E1A5B0049146A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE5D7850199E1A5B0049146A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DDColorConsoleLogger.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DDColorConsoleLogger/DDColorConsoleLogger-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FE5D7851199E1A5B0049146A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DDColorConsoleLogger.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DDColorConsoleLogger/DDColorConsoleLogger-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE5D7827199E1A5B0049146A /* Build configuration list for PBXProject "DDColorConsoleLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE5D784D199E1A5B0049146A /* Debug */,
+				FE5D784E199E1A5B0049146A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE5D784F199E1A5B0049146A /* Build configuration list for PBXNativeTarget "DDColorConsoleLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE5D7850199E1A5B0049146A /* Debug */,
+				FE5D7851199E1A5B0049146A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE5D7824199E1A5B0049146A /* Project object */;
+}
