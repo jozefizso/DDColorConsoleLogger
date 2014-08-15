@@ -8,10 +8,8 @@
 #import <Foundation/Foundation.h>
 #import <CocoaLumberjack/DDTTYLogger.h>
 
-@interface DDColorConsoleLogger : DDTTYLogger
+@interface DDColorConsoleLogger : NSObject
 
-+ (instancetype)sharedInstance;
-
-- (id)init;
++ (DDTTYLogger *)sharedInstance;
 
 @end

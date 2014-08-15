@@ -11,33 +11,21 @@
 
 @implementation DDColorConsoleLogger
 
-static DDColorConsoleLogger *sharedInstance;
-
-+ (instancetype)sharedInstance
++ (DDTTYLogger *)sharedInstance
 {
     static dispatch_once_t DDColorConsoleLoggerOnceToken;
     dispatch_once(&DDColorConsoleLoggerOnceToken, ^{
-        sharedInstance = [[[self class] alloc] init];
+        DDTTYLogger *logger = [DDTTYLogger sharedInstance];
+        
+        [logger clearAllColors];
+        [DDColorConsoleLogger initColors:logger];
+        logger.colorsEnabled = YES;
     });
     
-    return sharedInstance;
+    return [DDTTYLogger sharedInstance];
 }
 
-- (id)init
-{
-    if (sharedInstance != nil)
-    {
-        return nil;
-    }
-    
-    if ((self = [super init]))
-    {
-        [self setColorsEnabled:YES];
-    }
-    return self;
-}
-
-- (void)loadDefaultColorProfiles
++ (void)initColors:(DDTTYLogger *)logger
 {
     // tomorrow night colors
     UIColor *tnBlack = UIColorFromRGB(77, 77, 76);
@@ -50,11 +38,11 @@ static DDColorConsoleLogger *sharedInstance;
     UIColor *tnBlue __unused = UIColorFromRGB(66, 113, 174);
     UIColor *tnPurple __unused = UIColorFromRGB(137, 89, 168);
     
-    [sharedInstance setForegroundColor:tnRed backgroundColor:nil forFlag:LOG_FLAG_ERROR];
-    [sharedInstance setForegroundColor:tnOrange backgroundColor:nil forFlag:LOG_FLAG_WARN];
-    [sharedInstance setForegroundColor:tnBlack backgroundColor:nil forFlag:LOG_FLAG_INFO];
-    [sharedInstance setForegroundColor:tnPurple backgroundColor:nil forFlag:LOG_FLAG_DEBUG];
-    [sharedInstance setForegroundColor:tnGray backgroundColor:nil forFlag:LOG_FLAG_VERBOSE];
+    [logger setForegroundColor:tnRed backgroundColor:nil forFlag:LOG_FLAG_ERROR];
+    [logger setForegroundColor:tnOrange backgroundColor:nil forFlag:LOG_FLAG_WARN];
+    [logger setForegroundColor:tnBlack backgroundColor:nil forFlag:LOG_FLAG_INFO];
+    [logger setForegroundColor:tnPurple backgroundColor:nil forFlag:LOG_FLAG_DEBUG];
+    [logger setForegroundColor:tnGray backgroundColor:nil forFlag:LOG_FLAG_VERBOSE];
 }
 
 @end
