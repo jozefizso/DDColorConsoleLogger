@@ -6,8 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CocoaLumberjack/DDLog.h>
+#import <CocoaLumberjack/DDTTYLogger.h>
 
-@interface DDColorConsoleLogger : DDAbstractLogger<DDLogger>
+@interface DDColorConsoleLogger : DDTTYLogger
+
++ (instancetype)sharedInstance;
+
+- (id)init;
 
 @end
