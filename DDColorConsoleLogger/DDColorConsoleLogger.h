@@ -6,7 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CocoaLumberjack/DDLog.h>
 
-@interface DDColorConsoleLogger : NSObject
+@interface DDColorConsoleLogger : DDAbstractLogger<DDLogger>
 
 @end
